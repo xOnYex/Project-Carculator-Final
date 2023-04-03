@@ -1,4 +1,5 @@
 # ---- YOUR APP STARTS HERE ----
+
 # -- Import section --
 from flask import Flask
 # from flask import render_template
@@ -8,9 +9,10 @@ from flask import Flask
 # -- Initialization section --
 app = Flask(__name__)
 
-
 # -- Routes section --
+
+# INDEX
 @app.route('/')
 @app.route('/index')
 def index():
-    return "hello world"
+  return "hello world"
