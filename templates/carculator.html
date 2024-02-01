@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>The Carculator</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+  </head>
+  <body>
+    <div id ="index" class="header">
+      <p class="nomargin">[The Carculator™]</p>
+      <a href="index">
+      <img class = "pengone" src="../static/images/pengone.png">
+      </a>
+    </div>
+    <div class="container">
+      <div class ="container2a">
+        <div class="flexcontainer">
+          <div class="side">
+            <h1>Welcome, {{props.username}}.</h1>
+            <p>Enter your income below, and denote whether your income is annual or per-month.</p>
+            <form class="forma" method="post" action="/sendIncome">
+              <div class="flexinput">
+                <input type="number" name="income" placeholder="Enter your income here!">
+                <input type="submit" value="Submit">
+              </div>
+              <div class="flexcheck">
+                <label class="checkbox" for="check">
+                <input type="checkbox" id="check" name="check">
+                <span class="custom-checkbox"></span>
+                Monthly Income?</label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+  </body>
+</html>
